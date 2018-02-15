@@ -6,7 +6,7 @@ class Shoe
   def initialize(brand)
     @brand = brand
     BRANDS << brand
-    BRANDS.uniq.compact.length == 1
+    BRANDS = BRANDS.uniq
   end
 
 
