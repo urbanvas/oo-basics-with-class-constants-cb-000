@@ -3,11 +3,9 @@ class Shoe
   attr_reader :brand
 
   BRANDS = []
-  array = []
   def initialize(brand)
     @brand = brand
-    array << brand
-    BRANDS << array.uniq
+    BRANDS << brand if brand.include(brand) == false
   end
 
 
