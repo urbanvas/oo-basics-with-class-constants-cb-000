@@ -3,7 +3,7 @@ class Shoe
   attr_reader :brand
 
   BRANDS = []
-  array []
+  array = []
   def initialize(brand)
     @brand = brand
     array << brand
